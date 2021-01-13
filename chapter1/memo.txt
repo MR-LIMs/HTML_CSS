@@ -1,0 +1,5 @@
+document.head.parentNode.removeChild(document.head) 
+: 위 코드를 console에 칠 경우, head를 없애준다.
+
+headingsmap
+: 크롬의 확장 프로그램으로 HTML의 heading을 구분해준다.

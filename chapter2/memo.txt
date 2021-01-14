@@ -1,5 +1,63 @@
-레이아웃 짜기
-1) 가로로 큰 구역을 나눈다. ---------------
-2) 가로로 세부적인 구역을 나눈다. ----------------
-3) 세로로 세부적인 구역을 나눈다.
+* 레이아웃 짜기
+  1) 수평선으로 큰 구역을 나눈다. ---------------
+  2) 수평선으로 세부적인 구역을 나눈다. ----------------
+  3) 수직선으로 세부적인 구역을 나눈다.
 
+
+* user agent stylesheet
+  브라우저가 기본적으로 지정해준 style. 
+  개발자 도구에서 태그를 누르면 확인 가능하다.
+  브라우저마다 다르며, 그것을 잘 처리하는 것을 "크로스 브라우저" 라고 한다.
+
+  예를 들면, 
+  div { display: block; }
+  html { color: -internal-root-color; }
+
+* pixel(px)
+  길이의 단위로 상대적인 길이.
+  모니터마다 pixel이 다르다.
+
+  예를 들어,
+  A모니터의 가로 pixel이 1920px -> width : 1080px
+  => 1920px 중 1080px을 차지한다.
+
+  내 모니터의 가로 px 확인하는 법 : 개발자도구 console에서 screen.width 입력 // 1504
+  내 모니터의 가로 px 확인하는 법 : 개발자도구 console에서 screen.height 입력 // 1003
+
+* CSS 박스 모델
+  margin >> padding >> border >> content
+  - content : 내용이 차지하는 공간.
+  - padding : 꼭 필요없음
+  - border : 테두리, padding이 없어도 border를 사용하면 된다.
+  - margin : 다른 태그와의 거리.
+
+  - width는 content만 해당. 
+    ex) [width:50, padding:10, border:10, margin:10] = 50 + 10 + 10 + 10 = 80px
+  
+  - 지정방법
+    box-model: 위; 오른; 아래; 왼; (시계방향)
+    ex) padding: 10px; 20px; 10px; 20px;
+
+
+* display
+  block level (세로로 여러개의 요소 정렬)
+  - block : 부모에게 물려받은 공간을 전체 다 차지한다. / content + margin
+  
+  inline level (가로로 여러개의 요소 정렬)
+  - inline-block : 기본적으로 contents 공간만 딱 차지하지만, width를 통해 너비 조절이 가능. / content(조절가능)
+  - inline : 진짜 contents 공간만 딱 차지한다. => span은 자동 inline. / content
+
+* 태그마다 default로 지정돼있는 style이 다르다.
+  - html { display = block;}
+  - body {
+    display: block;
+    margin: 8px;
+    }
+  - div : {margin: 0px;}
+  - h1 : { font-size: 2em;        사이즈 2em
+    margin-block-start: 0.67em;   위
+    margin-block-end: 0.67em;     아래
+    margin-inline-start: 0px;     왼
+    margin-inline-end: 0px;       오른
+    font-weight: bold;            굵은 글씨
+    }

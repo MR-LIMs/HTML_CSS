@@ -61,3 +61,8 @@
     margin-inline-end: 0px;       오른
     font-weight: bold;            굵은 글씨
     }
+
+* class와 id
+  - class : 하나의 태그에 다른 클래스를 여러개 사용이 가능하다.
+    ex. <h2 class="blind zerocho babo"> -> blind와 zerocho와 babo라는 클래스가 각각 다 적용됨.
+  - id : 하나의 태그에 하나의 고유한 id만 사용 가능하다.

@@ -1,9 +1,12 @@
+<!-- document type이 html(5)이다 -->
 <!DOCTYPE html>
 <html lang="en">
+<!-- head는 사용자에게 보여지지 않고 meta 데이터만 있다. (부가적인 내용) -->
 <head>
     <!-- meta : 문서에 대한 정보를 나타내는 태그 -->
     <!-- charset : 문자를 처리하는 속성 -->
     <!-- <meta charset="UTF-8" />이 정석 -->
+    <!-- 8bit uniform transform format : 현존하는 모든 언어를 지원한다. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 문서의 제목을 의미하고, 웹 브라우저의 탭 부분에 표시된다. -->
@@ -12,6 +15,7 @@
     <!-- ./ : 현재 폴더 -->
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
 </head>
+<!-- body는 본문에 보여지는 내용 -->
 <body>
     <!-- 보통 중요한 것은 heading tag를 통해 강조한다.-->
     <h1>
@@ -19,6 +23,8 @@
         <a href="https://www.naver.com">네이버</a>
     </h1>
     <h2>검색창</h2>
+    <!-- <form> 태그는 사용자로부터 입력을 받을 수 있는 HTLM 입력 폼(form)을 정의할 때 사용합니다. -->
+    <!-- <fieldset> 태그는 <form> 요소에서 연관된 요소들을 하나의 그룹으로 묶을 때 사용합니다. -->
     <fieldset>
         <legend>검색</legend>
         <input />
@@ -26,7 +32,7 @@
         <input type="radio">
         <textarea></textarea>
         <button>검색</button>
-    </fieldset>     
+    </fieldset>
     
     <ul>    <!-- unordered list -->
         <li>메일</li>   <!-- list item -->
@@ -46,6 +52,7 @@
         <!-- img tag에서는 alt를 통해 스크린리더에게 정보를 준다. -->
         <li><img src="../img/mbc.png" alt="과학동아" /></li>
         <li><img src="../img/한국일보.png" alt="한국일보" /></li>
+    </ul>
     <h3>실시간 검색어</h3>
     <h3>로그인</h3>
     <h3>뉴스</h3>

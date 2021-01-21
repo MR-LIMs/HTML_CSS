@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.header-service {
+  margin: 0 auto;
+  width: 1080px;
+  margin-bottom: 20px;
+}
+
+#header-center {
+  margin: 0 auto;
+  width: 1080px;
+}
+
+#header-center > .header-logo {
+  width: 240px;
+  height: 58px;
+  margin: 0 20px 0 0;
+  display: inline-block;
+
+  /* image position */
+  /* background는 content로 생각하지 않는다. */
+  background: url(../img/sp_main.png) 0px -170px no-repeat;
+  background-size: 471px 442px;
+
+  overflow: hidden;
+}
+
+#header-center h1 {
+  margin: 0;
+}
+
+#header-center a {
+  width: 240px;
+  height: 58px;
+
+  display: inline-block;
+}
+
+#header-search {
+  display: inline-block;
+}
+
+#header-search > h2 {
+  display: inline-block;
+}
+
+#header-search > fieldset {
+  width: 586px;
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  /* border-color: #19ce60; */
+  border: 2px solid #19ce60;
+  display: inline-block;
+  position: relative;
+}
+
+#header-search > fieldset > input {
+  width: 490px;
+  height: 52px;
+  /* border: none; */
+  vertical-align: top;
+  outline: none;
+
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 700;
+
+  border: none;
+}
+
+#header-search > fieldset > button {
+  width: 53px;
+  height: 53px;
+  padding: 0;
+  border: none;
+  background: #19ce60;
+
+  position: absolute;
+  right: 0;
+}
+
+#header-search > fieldset .search-img {
+  width: 28px;
+  height: 28px;
+  background: url(../img/sp_main.png) -176px -382px no-repeat;
+  background-size: 440px 410px;
+  display: inline-block;
+}
+
+section {
+  position: static;
+  width: 400px;
+  height: 160px;
+  background: lightgray;
+}
+
+section > p {
+  width: 50%;
+  background-color: red;
+}

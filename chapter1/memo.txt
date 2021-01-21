@@ -3,3 +3,19 @@ document.head.parentNode.removeChild(document.head)
 
 headingsmap
 : 크롬의 확장 프로그램으로 HTML의 heading을 구분해준다.
+
+w3c
+: world wide web c, 세계 web표준화 단체
+
+mdn HTML
+: 모질라에서 추진해서 만든 html 웹사이트. 정보를 확인하고 예제를 통해 배우기 좋다. 
+=> html element reference
+=> 브라우저 호환가능성도 확인해야 된다.
+=> deplecated elements는 쓰면 안되는 태그.
+
+말도 안되는 태그를 사용할 경우? 대충 짐작해서 브라우저에서 컨텐츠를 보여준다.
+=> validator를 통해 error를 확인할 수 있다.
+
+favicon
+: 즐겨찾기 아이콘으로 로고 역할을 한다.
+https://moolgogiheart.tistory.com/84

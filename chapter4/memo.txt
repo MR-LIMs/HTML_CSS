@@ -1,0 +1,15 @@
+* position
+  기본적으로 html은 문서이므로 block이나 inline이 좌에서 우, 상에서 하로 정렬된다.
+  이를 벗어나 내가 원하는 위치에 block이나 inline을 구성하고 싶다면 position을 사용해준다.
+
+* block formatting context
+
+* css stacking context
+
+* inline / inline-block / block과
+* vertical align에 대해 좀 더 자세히 공부하기
+
+* display : flex에 대해서 좀 더 공부하기
+* 컨테이닝 블록 : position에 관련된 내용
+https://developer.mozilla.org/ko/docs/Web/CSS/All_About_The_Containing_Block#%EC%98%88%EC%A0%9C_1
+

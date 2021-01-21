@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+#header-center {
+  margin: 0 auto;
+  width: 1080px;
+}
+
+#header-center > .header-logo {
+  width: 280px;
+  display: inline-block;
+}
+
+#header-search {
+  display: inline-block;
+}
+
+#header-search > h2 {
+  display: inline-block;
+}
+
+#header-search > fieldset {
+  width: 586px;
+  height: 56px;
+  margin: 0;
+  padding: 10;
+  border-color: #19ce60;
+  display: inline-block;
+}

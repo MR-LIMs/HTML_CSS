@@ -37,11 +37,9 @@
 */
 
 #header-center {
+  /* margin의 좌우 여백을 동일하게 */
   margin: 0 auto; /* contents를 가로로 가운데 정렬해준다? */
   width: 1080px;
-}
-
-div {
 }
 
 /* header-search의 자식인 h1을 지정하겠다. */
@@ -60,4 +58,7 @@ div {
 }
 
 .header junior {
+}
+
+div {
 }

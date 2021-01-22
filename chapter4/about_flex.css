@@ -1,0 +1,37 @@
+/* http://flexboxfroggy.com/#ko */
+
+.flex-container {
+  background: lightblue;
+  display: flex;
+
+  /* 속기형 flex-flow: row wrap; */
+
+  /* 축의 시작, 중간, 끝 점
+  *  flex-start, center, flex-end 
+  */
+
+  /* 주축 flex-direction
+  *  row, row-reverse, column, column-reverse 
+  */
+
+  /* 주축에 대한 정렬 justify-content 
+  *  flex-start, center, flex-end, space-between, 
+  *  space-around, space-evenly, initial, inherit
+  */
+
+  /* 교차축 flex-wrap
+  *  nowrap, wrap, wrap-reverse, initial, inherit 
+  */
+
+  /* 교차축에 대한 정렬 align-content (줄 간격)
+  *  flex-start, center, flex-end, space-between, 
+  *  space-around, space-evenly, stretch
+  */
+
+  /* 교차축에 대한 정렬 align-items (모든 items)
+  *  stretch, flex-start, center, flex-end, baseline 
+  */
+}
+
+.flex-item {
+}

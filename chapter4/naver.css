@@ -6,7 +6,7 @@
 .blind {
   position: absolute;
   overflow: hidden;
-  clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0); /* 요소의 특정 부분만 잘라서 보여줌 */
   margin: -1px;
   width: 1px;
   height: 1px;

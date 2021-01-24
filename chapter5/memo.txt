@@ -1,0 +1,30 @@
+* id
+  두 단어를 조합해서 짓는게 좋다.
+
+* class
+  한 단어 이상으로 짓는다.
+
+* block format context여야 온전히 자식의 컨텐츠를 감쌀 수 있다.
+
+* margin collapsing
+
+* float : left 끼리는 순서를 지킨다.
+  => 이를 이용해 왼쪽부터 나열 가능.
+  => float을 쓰기 싫으면 display : inline-block 사용해라.
+
+* font 알아보기
+  f12 -> computed에서 rendered font
+
+* font 적용하기
+  font-family: dotum, '돋움', Helvetica, "Apple SD Gothic Neo", sans-serif;
+
+                1               2                                   3(모든 컴에)
+
+* text-align / float / position:absolute
+
+* margin collapsing
+  부모가 자식의 margin을 감싸지 못하는 경우.
+  => 부모가 block format context가 아니기 때문이다.
+  해결법
+  block format context로 만들기
+  display:inline-block; width:100%

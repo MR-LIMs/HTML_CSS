@@ -1,0 +1,25 @@
+/* case 1 */
+.blockformatcontext {
+  background-color: yellow;
+  height: 150px;
+  /* overflow: visible; */
+  overflow: hidden;
+  /* overflow: auto; */
+}
+
+.float {
+  float: right;
+  background-color: green;
+  height: 100px;
+}
+
+/* 형제 컨텐츠가 float을 감싸는걸 막기 */
+.non-float {
+  overflow: hidden;
+}
+
+.others {
+  text-align: right;
+}
+
+/* 다른 방법으로 block format context 형성 */

@@ -1,0 +1,69 @@
+/* case1. div 내에 컨텐츠가 있는 경우 */
+.box-parent1 {
+  background: black;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.box-parent1 > div {
+  width: 20px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: white;
+  vertical-align: middle;
+}
+
+.box-parent1 > [class^='box'] {
+  vertical-align: ;
+}
+
+.box-parent1 > .box1 {
+  vertical-align: ;
+}
+
+.box-parent1 > .box2 {
+  vertical-align: ;
+}
+
+.box-parent1 > .box6 {
+  vertical-align: ;
+}
+
+/* case2. div만 있는 경우 */
+.box-parent2 {
+  background: black;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.box-parent2 > div {
+  width: 20px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: white;
+  vertical-align: middle;
+}
+
+.box-parent2 > [class^='box'] {
+  vertical-align: ;
+}
+
+.box-parent2 > .box1 {
+  vertical-align: ;
+}
+
+.box-parent2 > .box2 {
+  vertical-align: ;
+}
+
+.box-parent2 > .box6 {
+  vertical-align: ;
+}

@@ -1,0 +1,19 @@
+/* case 1 */
+.blockformatcontext {
+  background-color: yellow;
+  height: 150px;
+  overflow: visible;
+  /* overflow: hidden; */
+  /* overflow: auto; */
+}
+
+.float {
+  float: right;
+  background-color: green;
+  height: 200px;
+  /* height: 100px; */
+}
+
+.others {
+  text-align: right;
+}

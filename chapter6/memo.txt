@@ -1,0 +1,16 @@
+* inline-block의 문제점
+  <가로>
+  block간에 4px만큼의 간격이 생긴다. => font-size:0을 주거나, div간의 enter키를 없애준다.
+  혹은
+  float:left을 사용해준다. -> 부모를 bfc로!!
+
+  <세로>
+  위에 있는 block을 vertical-align: top
+
+* float 사용시 부모가 block format context를 형성해야 하고
+  overflow: auto;
+  -
+  display: inline-block;
+  width: 100%
+
+* width : calc(100% / 6);

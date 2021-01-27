@@ -1,0 +1,365 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+
+body {
+  margin: 0;
+}
+
+.center-align {
+  width: 1130px;
+  margin: auto;
+}
+
+.text-gr {
+  color:#03C75A;
+}
+
+@font-face {
+  src: url('../font/Nanumsquare_ac_TTF/NanumSquare_acEB.ttf');
+  font-family: 'nanumsquare';
+}
+
+/* ---------------header_others-----------------*/
+#nh-others {
+  height:23px;
+  margin:10px 0;
+  font-size: 11px;
+  float: right;
+}
+
+#nh-search {
+  /* 해당 요소가 float 요소의 다음일지 아래로 내려갈지 결정. */
+  clear: both;
+}
+
+/* 가상 요소 추가하기 */
+#nh-center .nst-img:after {
+  width: 26px;
+  height: 26px;
+  background: url(../img/sp_main.png) -382px -213px no-repeat;
+  background-size: 440px 410px;
+  display: inline-block;
+  content:""; /* 가상 요소 컨텐츠 형성 */
+  vertical-align: middle;
+  /* vertical-align: top;  */
+  /* vertical align은 형제 요소의 높이를 기준으로 정렬,
+  형제 중에 가장 큰 높이 값을 갖고 있는 요소가 기준이 된다. */
+}
+
+#nh-others > .sa-bar {
+  width: 2px;
+  height: 10px;
+  background: #E4E8EB;
+  display:inline-block;
+}
+
+#nh-center .jn-img {
+  width: 60px;
+  height: 11px;
+  margin: 3px;
+  background: url(../img/sp_main.png) -333px -267px; no-repeat;
+  background-size: 440px 410px;
+  display: inline-block;
+}
+
+#nh-center .hb-img {
+  width: 34px;
+  height: 11px;
+  margin:3px;
+  background: url(../img/sp_main.png) -257px -308px no-repeat;
+  background-size: 440px 410px;
+  display: inline-block;
+}
+
+#nh-others > a {
+  vertical-align: middle;
+}
+
+/* ---------------header_search-----------------*/
+#nh-search {
+  height:100px;
+  position: relative;
+  margin-bottom:20px;
+}
+
+#nh-search > .logo-box {
+  width:221px;
+  height:100px;
+  display:inline-block;
+  position: relative;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+#nh-search .n-logo {
+  width:221px;
+  height:52px;
+  background: url(../img/sp_main.png) -0px -158px no-repeat;
+  background-size: 440px 410px;
+  display: inline-block;
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+#nh-search > .search-box {
+  width: 600px;
+  height: 60px;
+  padding:0;
+  margin:0;
+  display: inline-block;
+  border: 2px solid #04CF5C;
+  /* border의 굵기가 홀수이면, 문제가 생길 수 있다. */
+  position: relative;
+  top:50%;
+  transform:translate(0%, -50%);
+  /* top:50%;
+  transform:translateY(-50%); */
+}
+
+#nh-search > .search-box > input {
+  width:400px;
+  height:54px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#nh-search .vtc-keyboard {
+  position: absolute;
+  top: 0;
+  right: 84px;
+  bottom: 0;
+  width: 36px;
+  z-index: 400;
+}
+
+#nh-search .kbd-img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  background-image: url(../img/sp_main.png);
+  background-position: -420px -248px;
+  background-repeat: no-repeat;
+  background-size: 440px 410px;
+  vertical-align: top;
+  margin: -6px 0 0 -10px;
+}
+
+#nh-search .sch-history {
+  position: absolute;
+  top: 0;
+  right: 64px;
+  bottom: 0;
+  width: 22px;
+}
+
+#nh-search .hst-img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  background-image: url(../img/sp_main.png);
+  background-position: -404px -258px;
+  background-repeat: no-repeat;
+  background-size: 440px 410px;
+  vertical-align: top;
+}
+
+#nh-search > .search-box > button {
+  width:56px;
+  height:56px;
+  background: #04CF5C;
+  /* position:absolute;
+  right:0;
+  top:0; */
+  border:none;
+  padding:0;
+  float:right;
+}
+
+#nh-search > .search-box .sch-img {
+  width: 27px;
+  height: 27px;
+  background: url(../img/sp_main.png) -177px -382px no-repeat;
+  background-size: 440px 410px;
+  display:inline-block; /* 컨텐츠가 없으면 항상!! */
+}
+
+/* ---------------nav-----------------*/
+
+nav {
+  height:52px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  /* border: 1px solid lightgray;
+  border-width: 0 0 0 1px; */
+}
+
+nav > #main-nav {
+  height: 52px;
+}
+
+nav ul {
+  font-family: 'nanumsquare';
+  font-size: 16px;  
+}
+
+nav .nav-text {
+  vertical-align: top;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin:0;
+  display: inline-block;
+}
+
+#main-nav > .nav-text li:first-child::before {
+  width:21px;
+  height:21px;
+  background: url(../img/sp_main.png) -229px -387px no-repeat;
+  background-size: 440px 410px;
+  content:'';
+  display:inline-block;
+  vertical-align: top;
+  margin: -3px 5px 0 0;
+}
+
+#main-nav > .nav-text li {
+  display: inline-block;
+  margin-right:18px;
+}
+
+#main-nav h2 {
+  margin:0;
+}
+
+#main-nav > .keyword {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* main-left */
+#nm-main {
+  background-color: lightgray;
+  overflow: auto;
+}
+
+#nm-main-left {
+  display:inline-block;
+  width:750px;
+  height:2559.33px;
+  float:left;
+}
+
+#nm-main-left > .ad-square {
+  background-color: white;
+  display: inline-block;
+  width:750px;
+  height:135px;
+}
+
+#nm-main-left > .news-box {
+  background-color: white;
+  display:inline-block;
+  width:750px;
+  height:367px;
+}
+
+#nm-main-left > .news-box > .news-summary{
+  display:inline-block;
+  width:750px;
+  height:49px;
+}
+
+#nm-main-left .news-summary li{
+  display:inline-block;
+}
+
+#nm-main-left .press-list > ul{
+  border-top: 1px solid; 
+  border-left: 1px solid;
+}
+#nm-main-left .press-list li{
+  /* display:inline-block; => block 사이에 원치 않는 공간이 생김.*/
+  float:left;
+  width:124.62px;
+  height:65px;
+  /* position:relative; */
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  text-align: center; /*=> 가로 가운데 정렬*/
+}
+
+#nm-main-left li img{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  /* position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%); */
+}
+
+/* nm-main-right*/
+#nm-main-right {
+  display: inline-block;
+  width:350px;
+  height:1962px;
+  float:left;
+}
+
+/* keyword */
+.keyword {
+  position: relative;
+  display: inline-block;
+  width:172.33px;
+  height:30px;
+}
+
+.keyword > ul {
+  display:none;
+  position:absolute;
+  top:5px;
+  right:0;
+  width:180px;
+  height:200px;
+  background: white;
+  padding:15px;
+}
+
+.keyword:hover ul {
+  display:inline-block;
+}
+
+/* 7-4부터 들으면 된다... */

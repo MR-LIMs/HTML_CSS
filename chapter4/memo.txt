@@ -2,9 +2,13 @@
   기본적으로 html은 문서이므로 block이나 inline이 좌에서 우, 상에서 하로 정렬된다.
   이를 벗어나 내가 원하는 위치에 block이나 inline을 구성하고 싶다면 position을 사용해준다.
 
-* block formatting context
+* containing block
+  => position을 사용할 때 참고해야 한다.
 
-* css stacking context
+* block formatting context 
+  => float을 사용할 때 참고해야 한다.
+
+* css stacking context  
 
 * inline / inline-block / block과
 * vertical align에 대해 좀 더 자세히 공부하기

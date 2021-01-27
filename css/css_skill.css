@@ -1,0 +1,127 @@
+/* About CSS Selctor  */
+/* 
+  !important > inline style attribute > id > class, attribute,  pseudo-selector(:) > tag elements, pseudo-elements > * 
+  
+  pseudo-classes
+  :link, :visited, :active, :hover, :focus, :first-child, :lang(C), :target 
+  pseudo-elements
+  :first-letter, :first-line, :before, :after, :selection
+*/
+
+/* containing block */
+/* => position을 사용할 때 참고해야 한다. */
+
+/* block formatting context  */
+/* => float을 사용할 때 참고해야 한다. */
+/* overflow: auto;  
+    or  
+   display: inline-block; width: 100%; */
+
+/* margin collapsing */
+/* 
+  부모가 자식의 margin을 감싸지 못하는 경우.
+  부모가 block format context가 아니기 때문이다.
+
+  => block format context로 만들기
+  => display:inline-block; width:100% 
+*/
+
+/* About align */
+/* text-align, vertical-align */
+
+/* font 알아보기 */
+/* f12 -> computed에서 rendered font */
+
+/* font 적용하기 */
+/* font-family: dotum, '돋움', Helvetica, "Apple SD Gothic Neo", sans-serif;
+                1              2                                 3(모든 컴에) */
+
+/* 수평 정렬 3가지 */
+/* text-align, float , position */
+
+/* 수직 정렬 2가지 */
+/* vertical-align, position */
+
+/* nth-child, first-child */
+/* nth-type */
+
+/* inline-block의 문제점 */
+/* 
+  block간에 4px만큼의 간격이 생긴다.
+
+  <가로>
+  => font-size:0을 주거나
+  => div간의 enter키를 없애준다.
+  => float:left을 사용해준다. -> 부모를 bfc로!!
+  (float 사용시 부모가 block format context를 형성)
+
+  <세로>
+  => 위에 있는 block을 vertical-align: top
+*/
+
+/* calc() */
+tag {
+  width: calc(100% / 6);
+}
+
+/* blind 블라인드 */
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* background image : content로 생각하지 않는다. */
+tag {
+  background: url(../img/sp_main.png) 0px -170px no-repeat;
+  background-size: 471px 442px;
+
+  background-image: url(../img/sp_main.png);
+  background-position: -420px -248px;
+  background-repeat: no-repeat;
+  background-size: 440px 410px;
+}
+
+/* 가상 요소 추가하기 */
+tag:after,
+tag:before {
+  width: 26px;
+  height: 26px;
+  background: url(../img/sp_main.png) -382px -213px no-repeat;
+  background-size: 440px 410px;
+  display: inline-block;
+  content: ''; /* 가상 요소 컨텐츠 형성 */
+  vertical-align: middle;
+}
+
+/* float요소의 옆을 비운다. */
+tag {
+  clear: both;
+}
+
+/* 가운데 정렬 */
+tag {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%, -50%);
+}
+
+/* font 적용 */
+@font-face {
+  src: url('../font/Nanumsquare_ac_TTF/NanumSquare_acEB.ttf');
+  font-family: 'nanumsquare';
+}
+
+tag {
+  font-family: 'nanumsquare';
+  font-size: 16px;
+}
+
+/* 그림자 적용 */
+tag {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}

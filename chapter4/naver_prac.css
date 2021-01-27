@@ -16,6 +16,7 @@ a {
   text-decoration: none;
 }
 
+/* blind 블라인드 */
 .blind {
   position: absolute;
   overflow: hidden;

@@ -1,0 +1,43 @@
+/* position and containing block, mdn 참고 */
+
+.container {
+  margin: 20px;
+  height: 1000vh;
+}
+
+.container > div {
+  width: 200px;
+  height: 200px;
+  color: white;
+  background-color: teal;
+}
+
+/* fixed */
+/* 원래 위치에서 layer가 상단으로 가고, 
+*  스크롤을 내려도 viewport 화면상에 고정된다. 
+*/
+.container > :nth-child(3) {
+  background-color: wheat;
+  position: fixed;
+  width: 300px;
+  left: 20px;
+}
+
+/* relative */
+/* 원래 위치에서 움직일 수 있다. */
+.container > :nth-child(2) {
+  background-color: rgb(148, 152, 209);
+  position: relative;
+  width: 300px;
+  left: 20px;
+}
+
+/* absolute */
+/* 상위의 containing block을 기준으로 움직일 수 있다. */
+/* position이 static이 아닌 block이 containing block이 된다. (or body) */
+.container > :nth-child(4) {
+  background-color: rgb(204, 140, 175);
+  position: absolute;
+  width: 300px;
+  right: 10px;
+}

@@ -8,6 +8,8 @@
   :first-letter, :first-line, :before, :after, :selection
 */
 
+/* selector + selector : 형제 관계 */
+
 /* containing block */
 /* => position을 사용할 때 참고해야 한다. */
 
@@ -58,6 +60,32 @@
   <세로>
   => 위에 있는 block을 vertical-align: top
 */
+
+/* inline-block의 문제 */
+/*
+*  block간의 이유 모를 간격이 생긴다.
+*  가로 세로간의 간격도 다를 뿐 아니라,
+*  유저의 모니터 크기가 다르면, 블록이 한줄에 다 들어오지 못한다.
+*  => flex와 grid를 사용해야 한다.
+*/
+
+/* :nth-child(even or 2n) / :nth-child(odd or 2n+1) / :nth-child(3n)*/
+
+/* :state */
+/* active : 마우스로 클릭하고 있는 동안 
+*  hover : 마우스로 가리키고 있는 동안
+*  focus : 마우스로 선택 or 키보드로 선택 / ex. input tag와 함께
+*  visited : 방문해봤을 때
+*  focus-within : childElement가 focus되면 이렇게 해줘라~
+*/
+
+/* :root : document의 뿌리, variable 형성하기*/
+:root { 
+  --main-color: #fcce00;
+}
+a {
+  color: var{var(--main-color)}
+}
 
 /* calc() */
 tag {

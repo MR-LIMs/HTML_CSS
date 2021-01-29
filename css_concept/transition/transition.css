@@ -1,0 +1,29 @@
+a {
+  color: white;
+  background-color: tomato;
+  text-decoration: none;
+  padding: 3px 5px;
+  border-radius: 5px;
+  transition: background-color 3s ease-in-out, color 3s ease-in-out;
+  /* transition: all 5s ease-in-out; */
+}
+
+a:focus {
+  border-radius: 50px;
+  color: tomato;
+  background-color: white;
+}
+
+/* 
+* hover에 transition을 둬도 되지만, 마우스를 떼는 순간 효과가 바로 사라진다.
+* 
+* transition-property : 원하는 애니메이션 시킬 속성을  입력합니다. (color, background-color, border-radius, position....)
+* transition-duration : 애니메이션 효과가 몇초동안 실행될지, 시작해서 끝날때까지 시간을 밀리초(ms), 초(s)단위로  설정합니다.
+*
+* (선택사항)
+* transition-timingfunction : 애니메이션이 적용되는 속도를 지정합니다.(linear, ease(기본값), ease-in, ease-out. ease-in-out)
+* transition-delay : 애니메이션 효과가 몇초 지난 후 작동 할지 설정합니다. 
+* 
+* 함수 참고 : https://matthewlein.com/tools/ceaser
+* => cubic-bezier() : 나만의 함수 만들기
+*/
